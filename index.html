@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Angelo Koffi – Développeur Web en Formation. Interfaces modernes, responsives et performantes." />
+  <title>Ange_Dev</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#accueil" class="nav__logo"><img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744480/WhatsApp_Image_2026-06-18_at_12.55.00_AM_onfon9.jpg" alt="Logo Angelo Koffi" /></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="#accueil" class="nav__link">Accueil</a></li>
+        <li><a href="#apropos" class="nav__link">À propos</a></li>
+        <li><a href="#competences" class="nav__link">Compétences</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        <li><a href="#parcours" class="nav__link">Parcours</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="accueil">
+      <div class="container hero__inner">
+
+        <!-- Texte gauche -->
+        <div class="hero__content">
+          <span class="hero__badge">👋 Disponible pour des projets </span>
+          <h1 class="hero__name">Angelo <span class="hero__name--accent">Koffi EDEMNAWO</span></h1>
+          <p class="hero__role">
+            <span class="hero__role-text" id="typedRole"></span><span class="hero__cursor">|</span>
+          </p>
+          <p class="hero__desc">
+            Passionné par le développement web moderne, je crée des interfaces élégantes,
+            responsives et performantes grâce à <strong>HTML</strong> et <strong>CSS</strong>
+            tout en développant mes compétences en <strong>JavaScript</strong>.
+          </p>
+          <div class="hero__actions">
+            <a href="#portfolio" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--outline">Me contacter</a>
+          </div>
+          <!-- Indicateurs techno -->
+          <div class="hero__tech">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">JS ↗</span>
+          </div>
+        </div>
+
+        <!-- Illustration droite -->
+        <div class="hero__visual">
+          <div class="hero__card-glow"></div>
+          <div class="hero__code-card">
+            <div class="code-card__header">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="code-card__filename">index.html</span>
+            </div>
+            <pre class="code-card__body"><code><span class="c-tag">&lt;section</span> <span class="c-attr">class</span>=<span class="c-str">"hero"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;h1&gt;</span><span class="c-text">Angelo Koffi EDEMNAWO</span><span class="c-tag">&lt;/h1&gt;</span>
+  <span class="c-tag">&lt;p&gt;</span><span class="c-text">Développeur Web</span><span class="c-tag">&lt;/p&gt;</span>
+  <span class="c-tag">&lt;a</span> <span class="c-attr">href</span>=<span class="c-str">"#contact"</span><span class="c-tag">&gt;</span>
+    <span class="c-text">Me contacter</span>
+  <span class="c-tag">&lt;/a&gt;</span>
+<span class="c-tag">&lt;/section&gt;</span></code></pre>
+          </div>
+          <!-- Logo circulaire stylisé -->
+          <div class="hero__avatar">
+            <img class="hero__avatar__logo" src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744480/WhatsApp_Image_2026-06-18_at_12.55.00_AM_onfon9.jpg" alt="logoange">
+          </div>
+        </div>
+      </div>
+
+      <!-- Vague de séparation -->
+      <div class="hero__wave">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--color-gray-light)" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ========== STATISTIQUES ========== -->
+    <section class="stats" aria-label="Statistiques clés">
+      <div class="container stats__grid">
+        <div class="stat-card">
+          <span class="stat-card__number">10+</span>
+          <span class="stat-card__label">Projets réalisés</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">100%</span>
+          <span class="stat-card__label">Responsive</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">✓</span>
+          <span class="stat-card__label">HTML & CSS Maîtrisé</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">↗</span>
+          <span class="stat-card__label">JavaScript en apprentissage</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section class="about section" id="apropos">
+      <div class="container about__inner">
+        <div class="about__photo">
+          <img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744060/WhatsApp_Image_2026-06-18_at_12.42.46_AM_qttwam.jpg" alt="Photo d'Angelo Koffi" />
+          <div class="about__photo-badge">
+            <span>💻</span>
+            <span>Ange_Dev</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <span class="section__eyebrow">À propos de moi</span>
+          <h2 class="section__title">Passionné par le web, <br>déterminé à évoluer</h2>
+          <p class="about__text">
+            Je m'appelle Angelo Koffi EDEMNAWO, développeur web en formation, animé par une
+            passion sincère pour la création d'interfaces digitales modernes. Depuis
+            que j'ai écrit ma première balise HTML, j'ai compris que le développement
+            web était bien plus qu'un métier : c'est un art où technique et créativité
+            se rencontrent.
+          </p>
+          <p class="about__text">
+            Aujourd'hui, je maîtrise HTML5 et CSS3 avec leurs techniques avancées —
+            Flexbox, Grid, animations — et je construis chaque jour mes compétences
+            en JavaScript. Mon objectif est clair : devenir un développeur Front-End
+            professionnel capable de créer des expériences utilisateur de qualité.
+          </p>
+          <p class="about__text">
+            Rigoureux, curieux et motivé, je travaille constamment à améliorer mon code
+            et à suivre les meilleures pratiques du secteur. Chaque projet est pour moi
+            l'occasion d'apprendre quelque chose de nouveau.
+          </p>
+          <div class="about__actions">
+            <a href="c:\Users\Good Fella\Downloads\CV_Koffi_Angélo_EDEMNAWO.pdf" class="btn btn--primary" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Télécharger mon CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Mon COMPÉTENCES ========== -->
+    <section class="skills section section--gray" id="competences">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Mes compétences</span>
+          <h2 class="section__title">Ce que je sais faire</h2>
+          <p class="section__subtitle">Une maîtrise solide des fondamentaux, avec un apprentissage actif de JavaScript.
+          </p>
+        </div>
+
+        <div class="skills__grid">
+          <!-- Maîtrisées -->
+          <div class="skills__group">
+            <h3 class="skills__group-title">
+              <span class="skills__group-icon">✅</span> Maîtrisées
+            </h3>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">HTML5</span>
+                <span class="skill-item__pct">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar__fill" style="--w:95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">CSS3</span>
+                <span class="skill-item__pct">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar__fill" style="--w:90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Responsive Design</span>
+                <span class="skill-item__pct">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar__fill" style="--w:70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Flexbox</span>
+                <span class="skill-item__pct">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar__fill" style="--w:65%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">CSS Grid</span>
+                <span class="skill-item__pct">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar__fill" style="--w:75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">Git & GitHub</span>
+                <span class="skill-item__pct">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar__fill" style="--w:70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- En apprentissage -->
+          <div class="skills__group">
+            <h3 class="skills__group-title">
+              <span class="skills__group-icon">📈</span> En apprentissage
+            </h3>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">JavaScript</span>
+                <span class="skill-item__pct">5%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar__fill skill-bar__fill--learning" style="--w:5%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">DOM Manipulation</span>
+                <span class="skill-item__pct">1%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar__fill skill-bar__fill--learning" style="--w:1%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__header">
+                <span class="skill-item__name">ES6+</span>
+                <span class="skill-item__pct">1%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar__fill skill-bar__fill--learning" style="--w:1%"></div>
+              </div>
+            </div>
+
+            <!-- Cartes techno -->
+            <div class="skills__cards">
+              <div class="skill-card">
+                <div class="skill-card__icon">🌐</div>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-card">
+                <div class="skill-card__icon">🎨</div>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-card">
+                <div class="skill-card__icon">📐</div>
+                <span>Flexbox</span>
+              </div>
+              <div class="skill-card">
+                <div class="skill-card__icon">⚡</div>
+                <span>Grid</span>
+              </div>
+              <div class="skill-card">
+                <div class="skill-card__icon">🔧</div>
+                <span>Git</span>
+              </div>
+              <div class="skill-card skill-card--learning">
+                <div class="skill-card__icon">🚀</div>
+                <span>JS ↗</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Mes services</span>
+          <h2 class="section__title">Ce que je propose</h2>
+          <p class="section__subtitle">Des solutions web simples, efficaces et adaptées à vos besoins.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon">🖥️</div>
+            <h3 class="service-card__title">Création de sites vitrines</h3>
+            <p class="service-card__desc">Des sites élégants qui présentent votre activité de façon professionnelle et
+              mémorable.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">🚀</div>
+            <h3 class="service-card__title">Landing pages. </h3>
+            <p class="service-card__desc">Des pages d'atterrissage optimisées pour convertir vos visiteurs en clients
+              potentiels.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">💼</div>
+            <h3 class="service-card__title">Portfolio professionnel</h3>
+            <p class="service-card__desc">Un portfolio qui met en valeur vos compétences et donne envie de vous
+              recruter.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">⚡</div>
+            <h3 class="service-card__title">Intégration HTML/CSS</h3>
+            <p class="service-card__desc">Transformation de maquettes (Figma, XD, PSD) en code HTML/CSS pixel-perfect.
+            </p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">📱</div>
+            <h3 class="service-card__title">Optimisation responsive</h3>
+            <p class="service-card__desc">Adaptation de vos sites existants pour une expérience parfaite sur tous les
+              écrans.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">🔧</div>
+            <h3 class="service-card__title">Maintenance de sites</h3>
+            <p class="service-card__desc">Mise à jour de contenu, corrections de bugs et améliorations visuelles de vos
+              pages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section class="portfolio section section--gray" id="portfolio">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Mes réalisations</span>
+          <h2 class="section__title">Projets récents</h2>
+          <p class="section__subtitle">Chaque projet est une nouvelle occasion d'apprendre et de progresser.</p>
+        </div>
+
+        <div class="portfolio__grid">
+          <!-- Projet 1 -->
+          <article class="project-card">
+            <div class="project-card__img" style="--proj-color:#1d4ed8">
+              <img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744485/WhatsApp_Image_2026-06-18_at_12.59.40_AM_irnaqi.jpg" alt="photo de mon projet">
+              <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <text x="160" y="175" text-anchor="middle" fill="#fffff" font-size="12" opacity="0.7">Type de site (nom)</text>
+              </svg>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--primary btn--sm">Aperçu</a>
+                <a href="#" class="btn btn--outline btn--sm">Détails</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projet à Venir</h3>
+              <p class="project-card__desc">Détails sur le site.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="project-card">
+            <div class="project-card__img" style="--proj-color:#0f172a">
+              <img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744485/WhatsApp_Image_2026-06-18_at_12.59.40_AM_irnaqi.jpg" alt="photo de mon projet">
+              <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <text x="160" y="185" text-anchor="middle" fill="#fffff" font-size="12">Type de site (nom)</text>
+              </svg>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--primary btn--sm">Aperçu</a>
+                <a href="#" class="btn btn--outline btn--sm">Détails</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projet à Venir</h3>
+              <p class="project-card__desc">Détails sur le site.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="project-card">
+            <div class="project-card__img" style="--proj-color:#065f46">
+              <img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744485/WhatsApp_Image_2026-06-18_at_12.59.40_AM_irnaqi.jpg" alt="photo de mon projet">
+              <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <text x="160" y="190" text-anchor="middle" fill="#fffff" font-size="11">Type de site (nom)</text>
+              </svg>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--primary btn--sm">Aperçu</a>
+                <a href="#" class="btn btn--outline btn--sm">Détails</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projet à Venir</h3>
+              <p class="project-card__desc">Détails sur le site.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 4 -->
+          <article class="project-card">
+            <div class="project-card__img" style="--proj-color:#4c1d95">
+              <img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744485/WhatsApp_Image_2026-06-18_at_12.59.40_AM_irnaqi.jpg" alt="photo de mon projet">
+              <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <text x="160" y="192" text-anchor="middle" fill="#fffff" font-size="11">Type de site (nom)</text>
+              </svg>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--primary btn--sm">Aperçu</a>
+                <a href="#" class="btn btn--outline btn--sm">Détails</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projet à Venir</h3>
+              <p class="project-card__desc">Détails sur le site.</p>
+              <div class="project-card__tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 5 -->
+          <article class="project-card">
+            <div class="project-card__img" style="--proj-color:#92400e">
+              <img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744485/WhatsApp_Image_2026-06-18_at_12.59.40_AM_irnaqi.jpg" alt="photo de mon projet">
+              <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <text x="160" y="185" text-anchor="middle" fill="#fffff" font-size="11">Type de site (nom)</text>
+              </svg>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--primary btn--sm">Aperçu</a>
+                <a href="#" class="btn btn--outline btn--sm">Détails</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projet à Venir</h3>
+              <p class="project-card__desc">Détails sur le site.
+              </p>
+              <div class="project-card__tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 6 -->
+          <article class="project-card">
+            <div class="project-card__img" style="--proj-color:#0e7490">
+              <img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744485/WhatsApp_Image_2026-06-18_at_12.59.40_AM_irnaqi.jpg" alt="photo de mon projet">
+              <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <text x="160" y="196" text-anchor="middle" fill="#fffff" font-size="11">Type de site (nom)</text>
+              </svg>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--primary btn--sm">Aperçu</a>
+                <a href="#" class="btn btn--outline btn--sm">Détails</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projet à Venir. </h3>
+              <p class="project-card__desc">Détails sur le site.</p>
+              <div class="project-card__tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 7 -->
+          <article class="project-card">
+            <div class="project-card__img" style="--proj-color:#1e1b4b">
+              <img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744485/WhatsApp_Image_2026-06-18_at_12.59.40_AM_irnaqi.jpg" alt="photo de mon projet">
+              <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <text x="160" y="188" text-anchor="middle" fill="#fffff" font-size="11">Type de site (nom)</text>
+              </svg>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--primary btn--sm">Aperçu</a>
+                <a href="#" class="btn btn--outline btn--sm">Détails</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projet à Venir</h3>
+              <p class="project-card__desc">Détails sur le site.</p>
+              <div class="project-card__tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 8 -->
+          <article class="project-card">
+            <div class="project-card__img" style="--proj-color:#14532d">
+              <img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744485/WhatsApp_Image_2026-06-18_at_12.59.40_AM_irnaqi.jpg" alt="photo de mon projet">
+              <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <text x="160" y="195" text-anchor="middle" fill="#fffff" font-size="11">Type de site (nom)</text>
+              </svg>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--primary btn--sm">Aperçu</a>
+                <a href="#" class="btn btn--outline btn--sm">Détails</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Projet à Venir</h3>
+              <p class="project-card__desc">Détails sur le site.</p>
+              <div class="project-card__tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PARCOURS ========== -->
+    <section class="timeline section" id="parcours">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Mon parcours</span>
+          <h2 class="section__title">Apprentissage étape par étape</h2>
+          <p class="section__subtitle">Un chemin structuré vers la maîtrise du développement web.</p>
+        </div>
+
+        <div class="timeline__track">
+          <div class="timeline__item timeline__item--done">
+            <div class="timeline__marker"><span>1</span></div>
+            <div class="timeline__content">
+              <h3>Découverte du HTML</h3>
+              <p>Premières balises, structure d'une page, sémantique de base et attributs essentiels.</p>
+              <span class="timeline__status">Complété ✓</span>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--done">
+            <div class="timeline__marker"><span>2</span></div>
+            <div class="timeline__content">
+              <h3>Maîtrise du HTML</h3>
+              <p>Formulaires, tableaux, accessibilité, SEO de base et HTML5 sémantique avancé.</p>
+              <span class="timeline__status">Complété ✓</span>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--done">
+            <div class="timeline__marker"><span>3</span></div>
+            <div class="timeline__content">
+              <h3>Apprentissage du CSS</h3>
+              <p>Sélecteurs, box model, positionnement, typographie, couleurs et variables CSS.</p>
+              <span class="timeline__status">Complété ✓</span>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--done">
+            <div class="timeline__marker"><span>4</span></div>
+            <div class="timeline__content">
+              <h3>Responsive Design</h3>
+              <p>Flexbox, CSS Grid, media queries et approche mobile-first.</p>
+              <span class="timeline__status">Complété ✓</span>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--done">
+            <div class="timeline__marker"><span>5</span></div>
+            <div class="timeline__content">
+              <h3>Git & GitHub</h3>
+              <p>Versionnement du code, branches, commits et hébergement sur GitHub Pages.</p>
+              <span class="timeline__status">Complété ✓</span>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--active">
+            <div class="timeline__marker"><span>6</span></div>
+            <div class="timeline__content">
+              <h3>JavaScript</h3>
+              <p>Variables, fonctions, DOM, événements et logique de programmation ES6+.</p>
+              <span class="timeline__status timeline__status--active">En cours 🚀</span>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__marker"><span>7</span></div>
+            <div class="timeline__content">
+              <h3>Projets réels</h3>
+              <p>Développement de sites complets pour des clients et constitution d'un portfolio professionnel.</p>
+              <span class="timeline__status timeline__status--future">À venir ⏳</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== OBJECTIFS ========== -->
+    <section class="goals section section--gray">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Mes objectifs</span>
+          <h2 class="section__title">La route à suivre</h2>
+        </div>
+        <div class="goals__grid">
+          <div class="goal-card">
+            <div class="goal-card__icon">🎯</div>
+            <h3>Développeur Front-End Pro</h3>
+            <p>Atteindre un niveau professionnel reconnu en développement front-end.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-card__icon">⚡</div>
+            <h3>Maîtriser JavaScript</h3>
+            <p>Développer une maîtrise complète de JavaScript et de ses concepts avancés.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-card__icon">⚛️</div>
+            <h3>Apprendre React</h3>
+            <p>Apprendre le framework React pour créer des interfaces dynamiques et modernes.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-card__icon">💼</div>
+            <h3>Travailler en Freelance</h3>
+            <p>Lancer mon activité freelance et accompagner des clients dans leurs projets web.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-card__icon">🌐</div>
+            <h3>Solutions Numériques</h3>
+            <p>Créer des solutions numériques modernes à fort impact pour les entreprises et particuliers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TÉMOIGNAGES ========== -->
+    <section class="testimonials section" id="temoignages">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Témoignages</span>
+          <h2 class="section__title">Ce que disent mes collaborateurs</h2>
+        </div>
+        <div class="testimonials__grid">
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              Angelo a réalisé mon site vitrine avec soin et professionnalisme. Le résultat est moderne, rapide et
+              parfaitement responsive. Je recommande sans hésiter.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="background:#2563EB">MK</div>
+              <div>
+                <strong>Marie Kouassi</strong>
+                <span>Gérante de boutique</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              Très sérieux et à l'écoute. Angélo a livré la landing page dans les délais avec un design impeccable. Le
+              site est exactement ce que je cherchais.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="background:#0e7490">JA</div>
+              <div>
+                <strong>Jean Amani</strong>
+                <span>Entrepreneur digital</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              Excellent travail sur mon portfolio. Angelo sait écouter et traduit parfaitement les idées en design. Un
+              professionnel en devenir à surveiller de près.
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="background:#065f46">FA</div>
+              <div>
+                <strong>Fatou Assogba</strong>
+                <span>Photographe professionnelle</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq section section--gray">
+      <div class="container faq__inner">
+        <div class="section__header">
+          <span class="section__eyebrow">FAQ</span>
+          <h2 class="section__title">Questions fréquentes</h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary class="faq__question">Quels types de sites développez-vous ?</summary>
+            <div class="faq__answer">
+              <p>Je crée des sites vitrines, des portfolios, des landing pages et des interfaces statiques en HTML/CSS.
+                Je prends en charge tout type de projet web front-end adapté à votre activité.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Vos sites fonctionnent-ils sur mobile ?</summary>
+            <div class="faq__answer">
+              <p>Oui, absolument. Je travaille avec une approche <strong>mobile-first</strong> : chaque site que je crée
+                est optimisé pour fonctionner parfaitement sur smartphones, tablettes et ordinateurs.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Êtes-vous disponible pour des projets freelance ?</summary>
+            <div class="faq__answer">
+              <p>Oui, je suis disponible pour des projets freelance. N'hésitez pas à me contacter via le formulaire
+                ci-dessous ou directement par email pour discuter de votre projet.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">Quelles technologies utilisez-vous ?</summary>
+            <div class="faq__answer">
+              <p>J'utilise principalement <strong>HTML5</strong> et <strong>CSS3</strong> (Flexbox, Grid, animations,
+                variables CSS) avec versionnement via <strong>Git & GitHub</strong>. Je suis actuellement en
+                apprentissage de <strong>JavaScript</strong>.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+
+        <!-- Cartes de contact directes -->
+<div class="contact__cards">
+  <a href="tel:+22892603058" class="contact__card">
+    <div class="contact__card-icon"><i class="fa-solid fa-phone"></i></div>
+    <div class="contact__card-info">
+      <span class="contact__card-label">Téléphone</span>
+      <strong>+228 92 60 30 58</strong>
+    </div>
+  </a>
+
+  <a href="mailto:edemnawokoffiangelo@email.com" class="contact__card">
+    <div class="contact__card-icon"><i class="fa-solid fa-envelope"></i></div>
+    <div class="contact__card-info">
+      <span class="contact__card-label">Email</span>
+      <strong>edemnawokoffiangelo@email.com</strong>
+    </div>
+  </a>
+
+  <a href="https://wa.me/22892603558" target="_blank" rel="noopener" class="contact__card">
+    <div class="contact__card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+    <div class="contact__card-info">
+      <span class="contact__card-label">WhatsApp</span>
+      <strong>+228 92 60 35 58</strong>
+    </div>
+  </a>
+</div>
+
+        <!-- Grille info + formulaire -->
+        <div class="contact__inner">
+          <div class="contact__info">
+            <span class="section__eyebrow">Écrivez-moi</span>
+            <h2 class="section__title">Parlons de votre projet</h2>
+            <p class="contact__desc">
+              Vous avez un projet en tête ? Je serais ravi d'en discuter. Remplissez le formulaire
+              et je vous répondrai dans les plus brefs délais.
+            </p>
+<div class="contact__links">
+  <a href="mailto:edemnawokoffiangelo@email.com" class="contact__link">
+    <span class="contact__link-icon"><i class="fa-solid fa-envelope"></i></span>
+    edemnawokoffiangelo@email.com
+  </a>
+
+  <a href="tel:+22892603558" class="contact__link">
+    <span class="contact__link-icon"><i class="fa-solid fa-phone"></i></span>
+    +228 92 60 35 58
+  </a>
+
+  <a href="https://github.com/edemnawoangelo-ops" target="_blank" rel="noopener" class="contact__link">
+    <span class="contact__link-icon"><i class="fa-brands fa-github"></i></span>
+    https://github.com/edemnawoangelo-ops
+  </a>
+
+  <a href="https://monlienlinkdin" target="_blank" rel="noopener" class="contact__link">
+    <span class="contact__link-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+    mon lien linkdin
+  </a>
+</div>
+          </div>
+
+          <div class="contact__form-wrap">
+            <!--
+              FORMSPREE – Pour recevoir les messages par email
+              1. https://formspree.io c'est sur le site j'ais copier le ID                      
+              2. Copie ton ID (ex: xzzpgkrb)                    
+              3. je vaiscolew mon id devant formspree.io/f/
+            -->
+            <form class="contact__form" id="contactForm" action="https://formspree.io/f/xdavvvjw" method="POST">
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="name">Nom complet</label>
+                  <input type="text" id="name" name="name" placeholder="Votre nom" required />
+                </div>
+                <div class="form__group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="phone">Téléphone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+228 XX XX XX XX" />
+                </div>
+                <div class="form__group">
+                  <label for="subject">Sujet</label>
+                  <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required />
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+                Envoyer le message
+              </button>
+              <p class="form__success" id="formSuccess">✅ Message envoyé ! Je vous répondrai bientôt.</p>
+              <p class="form__error" id="formError">❌ Une erreur s'est produite. Réessayez ou contactez-moi par email.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <!-- Col 1 : Brand -->
+      <div class="footer__brand">
+        <a href="#accueil" class="footer__logo"><img src="https://res.cloudinary.com/dyo3r3lph/image/upload/v1781744480/WhatsApp_Image_2026-06-18_at_12.55.00_AM_onfon9.jpg" alt="Logo Angelo Koffi" /></a>
+        <p>Développeur Web en Formation. Passionné, rigoureux et toujours en apprentissage.</p>
+<div class="footer__social">
+  <a href="https://github.com/edemnawoangelo-ops" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+  <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="https://www.facebook.com/share/1BG1mN116X/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://wa.me/qr/UZDWFC4BRWLFN1" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="https://www.instagram.com/goodfellagf?igsh=eDV4bDE3Z294Mmdv" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+</div>
+      </div>
+
+      <!-- Col 2 : Navigation -->
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#portfolio">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 : Services -->
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Sites vitrines</a></li>
+          <li><a href="#services">Landing pages</a></li>
+          <li><a href="#services">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 : Contact -->
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:edemnawokoffiangelo@email.com">edemnawokoffiangelo@email.com</a></li>
+          <li><a href="tel:+22892603558">+228 92 60 35 58</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Ange_Dev – Développeur Web. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+<script src="javascript.js"></script>
+</body>
+
+</html>
