@@ -461,8 +461,7 @@ button {
 
 .code-card__header {
   display: flex;
-  align-items: center;
-  gap: 0.4rem;
+  align-items: center;  gap: 0.4rem;
   padding: 0.7rem 1rem;
   background: rgba(255,255,255,0.04);
   border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -653,6 +652,10 @@ button {
   margin-bottom: var(--space-md);
 }
 
+.skills__group-icon{
+  width: 30px;
+}
+
 .skill-item__header {
   display: flex;
   justify-content: space-between;
@@ -725,6 +728,7 @@ button {
 .skill-card__icon {
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
+  width: 40px;
 }
 
 /* ----------------------------------------------------------
@@ -771,6 +775,7 @@ button {
   font-size: 2.5rem;
   margin-bottom: var(--space-sm);
   display: block;
+  width: 50px;
 }
 
 .service-card__title {
@@ -984,6 +989,10 @@ button {
   border-color: var(--color-gray-mid);
 }
 
+.img{
+  width: 30px;
+}
+
 /* ----------------------------------------------------------
    12. OBJECTIFS
    ---------------------------------------------------------- */
@@ -1012,6 +1021,7 @@ button {
   font-size: 2.5rem;
   margin-bottom: var(--space-sm);
   display: block;
+  width: 50px;
 }
 
 .goal-card h3 {
