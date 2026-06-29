@@ -125,16 +125,16 @@ typeEffect();
 // 6. CONTACT FORM (Formspree)
 // ============================================================
 const contactForm = document.getElementById('contactForm');
-const submitBtn   = document.getElementById('submitBtn');
+const submitBtn = document.getElementById('submitBtn');
 const formSuccess = document.getElementById('formSuccess');
-const formError   = document.getElementById('formError');
+const formError = document.getElementById('formError');
 
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Envoi en cours...'; }
     if (formSuccess) formSuccess.style.display = 'none';
-    if (formError)   formError.style.display   = 'none';
+    if (formError) formError.style.display = 'none';
 
     try {
       const response = await fetch(contactForm.action, {
@@ -158,7 +158,7 @@ if (contactForm) {
     }
     setTimeout(() => {
       if (formSuccess) formSuccess.style.display = 'none';
-      if (formError)   formError.style.display   = 'none';
+      if (formError) formError.style.display = 'none';
     }, 6000);
   });
 }
