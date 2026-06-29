@@ -1688,6 +1688,25 @@ details[open] .faq__question::after {
     padding: var(--space-sm) var(--space-md);
   }
 
+  .project-card__overlay {
+  position: absolute;
+  z-index: 2; /* au-dessus de l'image et du SVG */
+  pointer-events: auto;
+}
+
+.project-card__overlay .btn {
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Si tu as un pseudo-élément ::before ou ::after sur la card qui bloque */
+.project-card__img::before,
+.project-card__img::after {
+  pointer-events: none; /* empêche de bloquer les clics */
+}
+
   /* Contact form */
   .contact__form-wrap {
     padding: var(--space-md);
