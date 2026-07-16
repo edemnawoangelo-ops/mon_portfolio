@@ -1359,6 +1359,13 @@ details[open] .faq__question::after {
   font-weight: 700;
 }
 
+.etoil::after {
+  content: '*';
+  color: #cc0808;
+  margin-left: 2px;
+  font-size: 0.9rem;
+}
+
 /* Grille info + formulaire */
 
 
@@ -1524,16 +1531,17 @@ details[open] .faq__question::after {
   display: flex;
   gap: 12px;
   align-items: center;
+  width: 200%;
 }
 
 .footer__social a {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1px;
+  background: rgb(255, 255, 255);
   font-size: 1.1rem;
   text-decoration: none;
   transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
@@ -1541,28 +1549,6 @@ details[open] .faq__question::after {
 
 .footer__social a:hover {
   transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-}
-
-.footer__social .fa-github {
-  color: #ffffff;
-}
-
-.footer__social .fa-linkedin-in {
-  color: #0A66C2;
-}
-
-.footer__social .fa-facebook-f {
-  color: #1877F2;
-}
-
-.footer__social .fa-whatsapp {
-  color: #25D366;
-}
-
-.footer__social .fa-instagram {
-  color: #E4405F;
 }
 
 .footer__col h4 {
